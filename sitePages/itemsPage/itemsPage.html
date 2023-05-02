@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokéPedia: Items</title>
+    <link rel="stylesheet" href="./itemsPage.css">
+  </head>
+
+  <body>
+    <header class="pp__itemPageHeader">
+      <img src="/sdi-blended-project1-scaffold/images/966b13b48ccb7af4f172492e18c0756d.png">
+      <nav class="pp__itemPageNavBar">
+        <a href="/sdi-blended-project1-scaffold/sitePages/mainPage/mainPage.html"><p>Home</p></a>
+        <a href="/sdi-blended-project1-scaffold/sitePages/pokemonPage/pokemonPage.html"><p>Pokémon</p></a>
+        <a href="/sdi-blended-project1-scaffold/sitePages/locationsPage/locationsPage.html"><p>Locations</p></a>
+        <a href="/sdi-blended-project1-scaffold/sitePages/movesPage/movesPage.html"><p>Moves</p></a>
+      </nav>
+      <div class="pp__itemPageHeader-searchBar">
+        <button onclick="popOut()"><img src="/sdi-blended-project1-scaffold/images/800px-Magnifying_glass_icon.svg.png"></button>
+        <form class="pp__itemPageHeader-searchBar-popOut">
+          <input class="searchPopOut" id="searchInput" onkeyup="searchBarFilter()" placeholder="Search by name or category!">
+        </form>
+      </div>
+    </header>
+
+    <div class="pp__itemPageContainer">
+    </div>
+
+    <script src="./itemsPage.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,12 @@
+{
+  "name": "sdi-blended-project1-scaffold",
+  "version": "1.0.0",
+  "description": "Add any files you see fit for your application to work. Make sure to change this README to include a description of your application and how to get it started.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,226 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Franklin Gothic Medium';
+  color: #EAEAEA;
+}
+
+body {
+  background: radial-gradient(circle at 50% 0%, rgba(62, 79, 148, 1) 0%, rgba(33, 43, 80, 1) 100%);
+  min-height: 100vh;
+}
+
+.pp__movesPageHeader + * {
+  margin-top: 10rem;
+}
+
+.pp__movesPageHeader {
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+
+  z-index: 9999;
+
+  background-color: #333333;
+
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.pp__movesPageHeader img {
+  padding: 1rem;
+
+  width: 12.5%;
+  height: 12.5%;
+
+}
+
+.pp__movesPageHeader nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  padding-left: 4rem;
+}
+
+.pp__movesPageHeader nav a {
+  text-decoration: none;
+
+  padding: 1rem;
+  font-size: 24px;
+}
+
+.pp__movesPageHeader-searchBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  margin-left: 2rem;
+}
+
+.pp__movesPageHeader-searchBar button{
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+
+  border-radius: 5px;
+  border-width: 1px;
+  background-color: #F7D02C;
+}
+
+.pp__movesPageHeader-searchBar img {
+  width: 50%;
+  height: 50%;
+
+  padding: 0;
+  }
+
+.searchPopOut {
+  display: none;
+  flex-direction: row;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+  color: #555555;
+
+}
+
+.pp__movesPageContainer {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 20px;
+
+  padding: 2rem;
+}
+
+.sprite {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+
+  background-color: rgb(51,51,51,0.5);
+
+  border-radius: 5px;
+}
+
+.sprite:hover {
+  scale: 1.05;
+  cursor: pointer;
+
+}
+
+.sprite p {
+
+  font-size: 14px;
+  text-align: center;
+  padding: .5rem;
+
+}
+
+.sprite img {
+  width: 100px;
+  height: 100px;
+
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: rgba(33, 43, 80, 0.8);
+
+  padding: 2rem;
+  border-radius: 10px;
+
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+  width: 80%;
+  margin: 10rem auto;
+  gap: 1rem;
+}
+
+.details-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.details h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.details p {
+  font-size: 1.1rem;
+}
+
+.details img {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+}
+
+.attributes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  gap: .5rem;
+}
+
+.backButton {
+  width: 100px;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+
+  background-color: #F7D02C;
+  color: #555555;
+
+  cursor: pointer;
+
+  font-size: 1rem;
+  font-weight: bold;
+
+  transition: background-color 0.2s ease;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 5px;
+  border: 2px solid #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}

@@ -1,0 +1,243 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Franklin Gothic Medium';
+  color: #EAEAEA;
+}
+
+body {
+
+  background: radial-gradient(circle at 50% 0%, rgba(62, 79, 148, 1) 0%, rgba(33, 43, 80, 1) 100%);
+  min-height: 100vh;
+
+
+}
+
+.pp__mainPageHeader + * {
+  margin-top: 6rem;
+}
+
+.pp__mainPageHeader {
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+  z-index: 9999;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+
+  background-color: #333333;
+
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+}
+
+.pp__mainPageHeader img {
+  padding: 1rem;
+
+  width: 12.5%;
+  height: 12.5%;
+
+}
+
+.pp__mainPageHeader nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  padding-left: 4rem;
+}
+
+.pp__mainPageHeader nav a {
+  text-decoration: none;
+
+  padding: 1rem;
+  font-size: 24px;
+}
+
+.pp__mainPageHeader-searchBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  margin-left: 2rem;
+}
+
+.pp__mainPageHeader-searchBar button{
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+
+  border-radius: 5px;
+  border-width: 1px;
+  background-color: #F7D02C;
+}
+
+.pp__mainPageHeader-searchBar img {
+  width: 50%;
+  height: 50%;
+
+  padding: 0;
+  }
+
+.searchPopOut {
+  display: none;
+  flex-direction: row;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+  color: #555555;
+
+}
+
+#suggestionsDropdown {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 134%;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+  color: #555555;
+
+}
+
+li {
+  color: #555555;
+
+}
+
+li:hover {
+  background-color: #e0e0e0;
+
+  cursor: pointer;
+}
+
+.pp__mainPageContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 50px;
+
+  padding: 2rem;
+}
+
+.pp__mainPageContainer-content{
+  grid-area: 1 / 1 / 2 / 2;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background: rgb(51,51,51,0.5);
+  border-radius: 10px;
+
+  min-height: 450px;
+
+  padding: 1rem;
+
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.pp__mainPageContainer-content h1 {
+  font-size: 60px;
+
+  padding-bottom: 2rem;
+
+}
+
+.pp__mainPageContainer-content p {
+
+  padding-bottom: 1rem;
+}
+
+.pp__mainPageContainer-content button {
+
+  background: none;
+  border-width: 0px;
+
+  cursor: pointer;
+
+}
+
+.pp__mainPageContainer-content img {
+  width: 100px;
+  height: 100px;
+
+
+}
+
+.pp__mainPageContainer-content img:hover {
+
+  scale: 1.01;
+
+}
+
+#pokemonNameContainer, #locationNameContainer, #itemNameContainer, #moveNameContainer  {
+  padding-top: 1rem;
+}
+
+@keyframes wiggle {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-3deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(3deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes pop-out {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.pop-out {
+  animation: pop-out 0.5s;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 5px;
+  border: 2px solid #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}

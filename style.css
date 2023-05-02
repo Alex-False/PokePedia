@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Franklin Gothic Medium';
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 100vh;
+  background: radial-gradient(circle at 50% 0%, rgba(62, 79, 148, 1) 0%, rgba(33, 43, 80, 1) 100%);
+}
+
+.pp__landingHeader {
+
+  margin-bottom: 5rem;
+
+}
+
+.pp__landingContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 40%;
+  min-height: 250px;
+
+  background-color: rgba(33, 43, 80, 0.8);
+
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  margin-top: 5rem;
+}
+
+.pp__landingContainer-welcome {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.pp__landingContainer-welcome h1 {
+  color: #EAEAEA;
+
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.pp__landingContainer-welcome h3 {
+
+  color: #bdbdbd;
+
+  font-size: 1.2rem;
+  margin-bottom: 3rem;
+}
+
+.pp__landingContainer-btn button {
+  width: 110px;
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  background-color: #F7D02C;
+  color: #555555;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+}
+
+.pp__landingContainer-btn button:hover {
+  background-color: #f1c40f;
+}
+
+.pp__landingBackground {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  width: 100vw;
+  margin-bottom: 8rem;
+  margin-top: 2rem;
+
+  overflow: hidden;
+}
+
+.sprite {
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+  transform: scaleX(-1);
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokéPedia: Main Page</title>
+    <link rel="stylesheet" href="./mainPage.css">
+  </head>
+
+  <body>
+    <header class="pp__mainPageHeader">
+      <img src="/sdi-blended-project1-scaffold/images/966b13b48ccb7af4f172492e18c0756d.png">
+      <nav class="pp__mainPageNavBar">
+        <a href="/sdi-blended-project1-scaffold/sitePages/pokemonPage/pokemonPage.html"><p>Pokémon</p></a>
+        <a href="/sdi-blended-project1-scaffold/sitePages/locationsPage/locationsPage.html"><p>Locations</p></a>
+        <a href="/sdi-blended-project1-scaffold/sitePages/itemsPage/itemsPage.html"><p>Items</p></a>
+        <a href="/sdi-blended-project1-scaffold/sitePages/movesPage/movesPage.html"><p>Moves</p></a>
+      </nav>
+      <div class="pp__mainPageHeader-searchBar">
+        <button onclick="popOut()"><img src="/sdi-blended-project1-scaffold/images/800px-Magnifying_glass_icon.svg.png"></button>
+        <form class="pp__mainPageHeader-searchBar-popOut">
+          <input class="searchPopOut" id="searchInput" onkeyup="searchBarFilter()" placeholder="Search anything by id or name!">
+          <ul id="suggestionsDropdown"></ul>
+        </form>
+      </div>
+    </header>
+
+      <div class="pp__mainPageContainer">
+        <a><div class="pp__mainPageContainer-content">
+          <h1>Pokémon!</h1>
+          <p>This category focuses on the vast collection of creatures within the Pokémon world. It provides information about different species of Pokémon, including their names, types, abilities, stats, and evolutionary paths. Users can explore various Pokémon and learn about their unique characteristics.</p><br>
+          <p>Just looking around? Click the button below to encounter a random Pokémon!</p>
+          <button id="getPokemon"><img id="pokemonImg" src="/sdi-blended-project1-scaffold/images/Tall grass.png"></button>
+          <div id="pokemonNameContainer"></div>
+        </div></a>
+        <a><div class="pp__mainPageContainer-content">
+          <h1>Locations!</h1>
+          <p>This category delves into the diverse regions and areas found in the Pokémon universe. It offers insights into various locations such as towns, cities, routes, caves, and landmarks.</p><br>
+          <p>Just looking around? Click the button below to visit a random location!</p>
+          <button id="getLocation"><img id="locationImg" src="/sdi-blended-project1-scaffold/images/building1.png"></button>
+          <div id="locationNameContainer"></div>
+        </div></a>
+        <a><div class="pp__mainPageContainer-content">
+          <h1>Items!</h1>
+          <p>This category covers the vast array of useful and unique items that players can acquire and utilize throughout their Pokémon journeys. It offers a catalog of items, ranging from healing and status-enhancing items to Poké Balls, TMs/HMs (Technical and Hidden Machines), Berries, held items, and more. Users can explore item descriptions, effects, and usage details.</p><br>
+          <p>Just looking around? Click the button below to discover a random item!</p>
+          <button id="getItem"><img id="itemImg" src="/sdi-blended-project1-scaffold/images/Pokeball.png"></button>
+          <div id="itemNameContainer"></div>
+        </div></a>
+        <a><div class="pp__mainPageContainer-content">
+          <h1>Moves!</h1>
+          <p>This category focuses on the wide range of techniques and abilities that Pokémon can learn and employ in battles. It provides an encyclopedia of moves, categorized by their types, including Normal, Fire, Water, Electric, Grass, Fighting, and more. Users can explore move details, such as power, accuracy, PP (Power Points), effect, and the Pokémon that can learn each move. </p><br>
+          <p>Just looking around? Click the button below to learn a random move!</p>
+          <button id="getMove"><img id="moveImg" src="/sdi-blended-project1-scaffold/images/Move.png"></button>
+          <div id="moveNameContainer"></div>
+        </div></a>
+      </div>
+
+    <script src="./mainPage.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokéPedia: Moves</title>
+    <link rel="stylesheet" href="./movesPage.css">
+  </head>
+
+  <body>
+    <header class="pp__movesPageHeader">
+      <img src="/sdi-blended-project1-scaffold/images/966b13b48ccb7af4f172492e18c0756d.png">
+      <nav class="pp__movesPageNavBar">
+        <a href="/sdi-blended-project1-scaffold/sitePages/mainPage/mainPage.html"><p>Home</p></a>
+        <a href="/sdi-blended-project1-scaffold/sitePages/pokemonPage/pokemonPage.html"><p>Pokémon</p></a>
+        <a href="/sdi-blended-project1-scaffold/sitePages/locationsPage/locationsPage.html"><p>Locations</p></a>
+        <a href="/sdi-blended-project1-scaffold/sitePages/itemsPage/itemsPage.html"><p>Items</p></a>
+
+
+      </nav>
+      <div class="pp__movesPageHeader-searchBar">
+        <button onclick="popOut()"><img src="/sdi-blended-project1-scaffold/images/800px-Magnifying_glass_icon.svg.png"></button>
+        <form class="pp__movesPageHeader-searchBar-popOut">
+          <input class="searchPopOut" id="searchInput" onkeyup="searchBarFilter()" placeholder="Search by name or type!">
+        </form>
+      </div>
+    </header>
+
+      <div class="pp__movesPageContainer">
+
+      </div>
+
+    <script src="./movesPage.js" defer></script>
+  </body>
+</html>
